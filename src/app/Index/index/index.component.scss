@@ -95,13 +95,56 @@ mat-card{
   fill: #FFFFFF;
   flex-grow: 1;
   text-transform: uppercase;
+  align-items: center;
+
   @media(max-width:750px){
     display: block;
   }
+}
+
+mat-list{
+  align-items: center !important;
+}
+
+mat-divider{
+  height: 1%;
 }
 
 mat-list-item:hover{
 
   color: rgb(106, 84, 58);
   background-color: rgba(128, 128, 128, 0.119);
+}
+
+#thaiseoffice{
+  background-image: url("/assets/Dermatologista-em-Ribeirao-Preto.jpg");
+  background-repeat: no-repeat;
+  background-position-x: -100px ;
+  background-attachment: local;
+
+  img{
+    display: none;
+  }
+
+  @media (max-width: 768px) {
+    img{
+      display: block;
+      width: 100%;
+    }
+  }
+}
+
+.normalText{
+  font-size: 17px;
+  text-align: left;
+  color: #000000;
+  font-weight: 300 !important;
+  line-height: 1.7em;
+}
+
+.bigText{
+  font-size: 25px;
+  text-align: left;
+  color: #000000;
+  font-weight: 500;
 }
