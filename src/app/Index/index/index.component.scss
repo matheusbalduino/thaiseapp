@@ -1,0 +1,34 @@
+#thaisereumato{
+        margin: 0px 0px 0px 0px;
+        background-image: url("/assets/thaisedr.jpg");
+        position: relative;
+        background-position: center;
+        background-position-y: -347px;
+        background-repeat: repeat-x;
+        height: 500px;  
+        margin: 0px 0px 0px 0px;
+        padding: 0px 0px 0px 0px;
+        background-attachment: fixed;
+        @media(max-width:600px) {
+            background-image: url("/assets/thaisedr.jpg");
+            position: relative;
+            background-position: center;
+            background-position-y: -347px;
+            background-position-x: -460px;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 600px;
+        }
+}
+
+.context_site {
+    background-color: white;
+}
+
+.example-icon {
+    padding: 0 14px;
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
