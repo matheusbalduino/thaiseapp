@@ -2,24 +2,41 @@
 
 <mat-toolbar>
 <mat-toolbar-row>
-  <div>
+  <div class="divbar">
     <span>Home</span>
     <span class="example-spacer"></span>
   </div>
-  <div>
+  <div  class="divbar">
     <span>Reumatologia clínica</span>
     <span class="example-spacer"></span>
   </div>
-  <div>
+  <div class="divbar">
     <span>Artigos</span>
     <span class="example-spacer"></span>
   </div>
-  <div>
+  <div class="divbar">
     <span>Contato</span>
     <span class="example-spacer"></span>
   </div>
   </mat-toolbar-row>
+
+  <button (click)="openCloseNav()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+    <mat-icon>{{menu}}</mat-icon>
+  </button>
 </mat-toolbar>
+
+<mat-card [ngClass]="{'noOption': !clickMenu}">
+  <mat-list role="list" >
+    <mat-list-item role="listitem">Home</mat-list-item>
+    <mat-list-item role="listitem">Reumatologia clínica</mat-list-item>
+    <mat-list-item role="listitem">Artigos</mat-list-item>
+    <mat-list-item role="listitem">Contato</mat-list-item>
+  </mat-list>
+
+</mat-card>
+
+
+
 
     <div style="text-align: center;
     margin-top: 5%;margin-bottom: 5%;">

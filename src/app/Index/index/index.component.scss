@@ -28,8 +28,6 @@ mat-toolbar{
   background-color: rgba(0, 0, 0, 0.787);
   padding: 0% 10% 0% 10%;
   font-size: 18px;
-  min-height: 40px !important;
-  height: 50px;
   font-family: "Montserrat", Sans-serif;
   font-size: 20px;
   font-weight: 500;
@@ -38,14 +36,21 @@ mat-toolbar{
   fill: #FFFFFF;
   flex-grow: 1;
   text-transform: uppercase;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+
+  button{
+    display: none;
+  }
 
   mat-toolbar-row{
     justify-content: space-between;
 
   }
 
-  div{
-    width: 20%;
+  .divbar{
+    width: 100%;
     cursor: pointer;
     text-align: center;
   }
@@ -56,9 +61,47 @@ mat-toolbar{
     transform: scale(0.9);
     transition: transform .3s ease-in-out;
   }
+  @media(max-width:750px){
+    padding: 0% 0% 0% 0%;
+    .divbar{
+      display: none;
+    }
+    mat-toolbar-row{
+      display: none;
+    }
+
+    button{
+      display: block;
+    }
+  }
 }
 
 .example-spacer {
-
   flex: 1 1 auto;
+}
+
+.noOption{
+  display: none;
+  transition: visibility 0s, opacity 0.5s linear;
+}
+
+mat-card{
+  display: none;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  flex-grow: 1;
+  text-transform: uppercase;
+  @media(max-width:750px){
+    display: block;
+  }
+}
+
+mat-list-item:hover{
+
+  color: rgb(106, 84, 58);
+  background-color: rgba(128, 128, 128, 0.119);
 }
