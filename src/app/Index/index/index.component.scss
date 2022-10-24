@@ -5,19 +5,18 @@
         background-position: center;
         background-position-y: -347px;
         background-repeat: repeat-x;
-        height: 500px;  
+        height: 50%;
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
         background-attachment: fixed;
         @media(max-width:600px) {
-            background-image: url("/assets/thaisedr.jpg");
-            position: relative;
-            background-position: center;
-            background-position-y: -347px;
-            background-position-x: -460px;
-            background-repeat: no-repeat;
-            width: 100%;
-            height: 600px;
+          background-position: center;
+          background-position-y: -347px;
+          background-repeat: repeat-x;
+          height: 50%;
+          margin: 0px 0px 0px 0px;
+          padding: 0px 0px 0px 0px;
+          background-attachment: fixed;
         }
 }
 
@@ -25,10 +24,41 @@
     background-color: white;
 }
 
-.example-icon {
-    padding: 0 14px;
+mat-toolbar{
+  background-color: rgba(0, 0, 0, 0.787);
+  padding: 0% 10% 0% 10%;
+  font-size: 18px;
+  min-height: 40px !important;
+  height: 50px;
+  font-family: "Montserrat", Sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  letter-spacing: 0.2px;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  flex-grow: 1;
+  text-transform: uppercase;
+
+  mat-toolbar-row{
+    justify-content: space-between;
+
   }
-  
-  .example-spacer {
-    flex: 1 1 auto;
+
+  div{
+    width: 20%;
+    cursor: pointer;
+    text-align: center;
   }
+
+  div:hover{
+    //font-size: 15px;
+    color: rgba(245, 222, 179, 0.508);
+    transform: scale(0.9);
+    transition: transform .3s ease-in-out;
+  }
+}
+
+.example-spacer {
+
+  flex: 1 1 auto;
+}
