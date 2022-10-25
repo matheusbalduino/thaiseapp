@@ -94,7 +94,7 @@ mat-toolbar{
   transition: visibility 0s, opacity 0.5s linear;
 }
 
-mat-card{
+.meucard{
   display: none;
   font-family: "Montserrat", Sans-serif;
   font-size: 20px;
@@ -180,4 +180,52 @@ mat-list-item:hover{
   text-align: left;
   color: #000000;
   font-weight: 500;
+}
+
+/*<------------------------------------- this region is responsable for the cards --------------------------------------->*/
+
+mat-grid-list{
+  width: 100%;
+}
+
+
+mat-grid-tile{
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #000000;
+  font-weight: 500 !important;
+  line-height: 1.7em;
+  text-transform: uppercase;
+}
+
+thead, tbody, tfoot, tr, td, th{
+  border-style: none;
+  box-shadow:none;
+
+}
+
+.example-card {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  max-width: 100%;
+  height: 100%;
+  margin-bottom: 0px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: none;
+  mat-card-content{
+    font-size: 1.5em;
+    color: #000000;
+    font-weight: 500 !important;
+    line-height: 1.7em;
+    text-transform: uppercase;
+    height: 50%;
+  }
+}
+
+.example-card:hover{
+  background-color: #00000027;
 }
