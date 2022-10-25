@@ -1,19 +1,26 @@
 #thaisereumato{
         margin: 0px 0px 0px 0px;
-        background-image: url("/assets/thaisedr.jpg");
+        background-image: url("/assets/reumatocapa.jpg");
         position: relative;
-        background-position: center;
-        background-position-y: -347px;
-        background-repeat: repeat-x;
-        height: 50%;
+        //background-position: center;
+        background-position-x: 50%;
+        background-repeat: no-repeat;
+        height: 40%;
         margin: 0px 0px 0px 0px;
         padding: 0px 0px 0px 0px;
         background-attachment: fixed;
+        background-size: 100%;
+        @media(max-width:922px) {
+          height: 25%;
+
+        }
         @media(max-width:600px) {
-          background-position: center;
-          background-position-y: -347px;
-          background-repeat: repeat-x;
-          height: 50%;
+          //background-position: center;
+          //background-position-y: -347px;
+          //background-repeat: repeat-x;
+          background-repeat: no-repeat;
+          background-size: 200%;
+          height: 30%;
           margin: 0px 0px 0px 0px;
           padding: 0px 0px 0px 0px;
           background-attachment: fixed;
@@ -39,6 +46,8 @@ mat-toolbar{
   justify-content: center;
   align-items: center;
   width: 100%;
+  border-color: black;
+  
 
   button{
     display: none;
@@ -116,26 +125,50 @@ mat-list-item:hover{
   background-color: rgba(128, 128, 128, 0.119);
 }
 
-#thaiseoffice{
-  background-image: url("/assets/Dermatologista-em-Ribeirao-Preto.jpg");
-  background-repeat: no-repeat;
-  background-position-x: -100px ;
-  background-attachment: local;
-
-  img{
-    display: none;
-  }
-
-  @media (max-width: 768px) {
+#logothaise{
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 2%;
+  @media(max-width:300px){
     img{
-      display: block;
       width: 100%;
     }
   }
 }
 
+#box1{
+  margin-bottom: .5%;
+  
+}
+
+#thaiseoffice{
+  background-image: url("/assets/Dermatologista-em-Ribeirao-Preto.jpg");
+  background-repeat: no-repeat;
+  background-attachment: local;
+  background-size: 100%;
+  //background-position: center;
+  img{
+    display: none;
+  }
+  @media(max-width:1540px){
+    background-size: 120%; 
+    background-position:center ;
+  }
+  @media(max-width:1350px){
+    background-size: 150%; 
+    background-position:center ;
+  }
+ 
+  @media(max-width:767px){
+    img{
+      width: 100%;
+      display: block;
+    }
+  }
+}
+
 .normalText{
-  font-size: 17px;
+  font-size: 20px;
   text-align: left;
   color: #000000;
   font-weight: 300 !important;
@@ -143,7 +176,7 @@ mat-list-item:hover{
 }
 
 .bigText{
-  font-size: 25px;
+  font-size: 36px;
   text-align: left;
   color: #000000;
   font-weight: 500;
