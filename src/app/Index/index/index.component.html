@@ -40,7 +40,7 @@
 <!--
 <mat-divider></mat-divider> -->
 
-<div id="box1"  class="row" style="background-color: #dcd6d6;">
+<div id="box1"  class="row" style="background-color: #dcd6d6;" fxShow [fxShow.xs]="false" fxShow [fxShow.sm]="true" fxHide [fxHide.gt-sm]="false">
 
   <div id="thaiseoffice"  class="col-md-6">
     <img src="/assets/Dermatologista-em-Ribeirao-Preto.jpg" alt="Reumatologia">
@@ -66,7 +66,33 @@
 
 </div>
 
-<mat-toolbar class="text-center"></mat-toolbar>
+<div id="box1"  class="row" style="background-color: #dcd6d6;" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true">
+
+  <div id="thaiseoffice">
+    <img src="/assets/Dermatologista-em-Ribeirao-Preto.jpg" alt="Reumatologia"/>
+  </div>
+
+</div>
+
+<div id="box1" class="row" style="background-color: #dcd6d6;" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true" >
+    <h1  class="bigText mt-3">
+      Sejam bem-vindos(as)!
+    </h1>
+    <p class="normalText">
+      Com muita dedicação, em 2008 fui aprovada na Pontifícia Universidade Católica de Campinas, onde cursei os 6 anos de Medicina que me trouxeram muitas vivências.
+    </p>
+    <p  class="normalText">
+      Em 2014 fui aprovada na residência médica em Dermatologia também pela Pontifícia Universidade Católica de Campinas, iniciando minha imersão na Dermatologia e onde tive excelentes professores, o que me possibilitou ter uma formação completa na áreas clínica, cirúrgica e estética.
+    </p>
+    <p  class="normalText">
+      Em 2017 iniciei minha especialização em Cirurgia Dermatológica pelo Hospital das Clínicas de Ribeirão Preto da Universidade de São Paulo, momento que lapidei minha técnica cirúrgica e adquiri experiência na oncologia cutânea.
+    </p  >
+    <p class="normalText">
+      E atualmente, realizo atendimentos que vão de encontro ao meu propósito, que é exercer a Dermatologia como sinônimo de saúde, bem-estar e felicidade!
+    </p>
+</div>
+
+<mat-toolbar id="nameThaise" class="text-center" > DR.Thaise Oliveira Quaresma - Reumatologia </mat-toolbar>
 
 <table class="table">
   <tbody>
