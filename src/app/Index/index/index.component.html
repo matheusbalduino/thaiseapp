@@ -18,9 +18,9 @@
     <span>Contato</span>
     <span class="example-spacer"></span>
   </div>
- 
 
-  <button (click)="openCloseNav()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+
+  <button id="buttonMenu" (click)="openCloseNav()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
     <mat-icon>{{menu}}</mat-icon>
   </button>
 </mat-toolbar>
@@ -41,7 +41,7 @@
 <mat-divider></mat-divider> -->
 
 <div id="box1"  class="row" style="background-color: #dcd6d6;">
-  
+
   <div id="thaiseoffice"  class="col-md-6">
     <img src="/assets/Dermatologista-em-Ribeirao-Preto.jpg" alt="Reumatologia">
   </div>
@@ -70,59 +70,148 @@
 
 <table class="table">
   <tbody>
-    <tr>
+    <tr  [fxShow.xs]="false" >
       <td>
-        <mat-card class="example-card">     
+        <mat-card class="example-card">
           <mat-card-content>
-            <mat-card-title><i class="material-icons" style="font-size: 50px;">local_hospital</i></mat-card-title>
+            <mat-card-title><i class="material-icons" style="font-size: 50px;">school</i></mat-card-title>
+            Medicina pela Universidade de Salvador - Bahiana
+          </mat-card-content>
+        </mat-card>
+      </td>
+      <td>
+        <mat-card class="example-card">
+          <mat-card-content>
+            <mat-card-title>
+              <img src="../../../assets/female-doctor-icon.svg" alt="doutora" class="mb-2">
+            </mat-card-title>
             Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
           </mat-card-content>
         </mat-card>
       </td>
       <td>
-        <mat-card class="example-card">     
+        <mat-card class="example-card" fxHide [fxHide.gt-sm]="false">
           <mat-card-content>
-            <mat-card-title><i class="material-icons" style="font-size: 50px;">local_hospital</i></mat-card-title>
-            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
-          </mat-card-content>
-        </mat-card>
-      </td>
-      <td>
-        <mat-card class="example-card">     
-          <mat-card-content>
-            <mat-card-title><i class="material-icons" style="font-size: 50px;">local_hospital</i></mat-card-title>
-            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
-          </mat-card-content>
-        </mat-card>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        <mat-card class="example-card">     
-          <mat-card-content>
-            <mat-card-title><i class="material-icons" style="font-size: 50px;">local_hospital</i></mat-card-title>
-            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
-          </mat-card-content>
-        </mat-card>
-      </td> <td>
-        <mat-card class="example-card">     
-          <mat-card-content>
-            <mat-card-title><i class="material-icons" style="font-size: 50px;">local_hospital</i></mat-card-title>
-            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
-          </mat-card-content>
-        </mat-card>
-      </td> <td>
-        <mat-card class="example-card">     
-          <mat-card-content>
-            <mat-card-title><i class="material-icons" style="font-size: 50px;">local_hospital</i></mat-card-title>
+            <mat-card-title><i class="material-icons" style="font-size: 50px;">person</i></mat-card-title>
             Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
           </mat-card-content>
         </mat-card>
       </td>
     </tr>
+    <tr  [fxShow.xs]="false">
+      <td>
+        <mat-card class="example-card">
+          <mat-card-content>
+            <mat-card-title><i class="material-icons" style="font-size: 50px;">local_hospital</i></mat-card-title>
+            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+          </mat-card-content>
+        </mat-card>
+      </td>
+      <td>
+        <mat-card class="example-card">
+          <mat-card-content>
+            <mat-card-title>
+              <img src="../../../assets/medical-history-icon.svg" alt="doutora" class="mb-2">
+            </mat-card-title>
+            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+          </mat-card-content>
+        </mat-card>
+      </td>
+      <td fxHide [fxHide.gt-sm]="false">
+        <mat-card class="example-card">
+          <mat-card-content>
+            <mat-card-title>
+              <img src="../../../assets/symptoms-check-icon.svg" alt="doutora" class="mb-3">
+            </mat-card-title>
+            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+          </mat-card-content>
+        </mat-card>
+      </td>
+    </tr>
+    <tr fxShow [fxShow.xs]="false" fxShow [fxShow.sm]="true" fxHide [fxHide.gt-sm]="true" >
+      <td>
+        <mat-card class="example-card">
+          <mat-card-content>
+            <mat-card-title><i class="material-icons" style="font-size: 50px;">person</i></mat-card-title>
+            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+          </mat-card-content>
+        </mat-card>
+      </td>
+      <td>
+        <mat-card class="example-card">
+          <mat-card-content>
+            <mat-card-title>
+              <img src="../../../assets/symptoms-check-icon.svg" alt="doutora" class="mb-3">
+            </mat-card-title>
+            Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+          </mat-card-content>
+        </mat-card>
+      </td>
+    </tr>
+
   </tbody>
 </table>
 
+<table class="table" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true">
+  <tbody>
+    <tr>
+      <td>
+        <mat-card class="example-card">
+          <mat-card-content>
+            <mat-card-title><i class="material-icons" style="font-size: 50px;">school</i></mat-card-title>
+            Medicina pela Universidade de Salvador - Bahiana
+          </mat-card-content>
+        </mat-card>
+      </td>
+    </tr>
+    <tr>
+      <mat-card class="example-card">
+        <mat-card-content>
+          <mat-card-title>
+            <img src="../../../assets/female-doctor-icon.svg" alt="doutora" class="mb-2">
+          </mat-card-title>
+          Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+        </mat-card-content>
+      </mat-card>
+    </tr>
+    <tr>
+      <mat-card class="example-card" fxHide [fxHide.gt-sm]="false">
+        <mat-card-content>
+          <mat-card-title><i class="material-icons" style="font-size: 50px;">person</i></mat-card-title>
+          Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+        </mat-card-content>
+      </mat-card>
+    </tr>
+    <tr>
+      <mat-card class="example-card">
+        <mat-card-content>
+          <mat-card-title><i class="material-icons" style="font-size: 50px;">local_hospital</i></mat-card-title>
+          Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+        </mat-card-content>
+      </mat-card>
+    </tr>
+    <tr>
+      <mat-card class="example-card">
+        <mat-card-content>
+          <mat-card-title>
+            <img src="../../../assets/medical-history-icon.svg" alt="doutora" class="mb-2">
+          </mat-card-title>
+          Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+        </mat-card-content>
+      </mat-card>
+    </tr>
+    <tr>
+      <mat-card class="example-card">
+        <mat-card-content>
+          <mat-card-title>
+            <img src="../../../assets/symptoms-check-icon.svg" alt="doutora" class="mb-3">
+          </mat-card-title>
+          Residência Médica pela Universidade de São Paulo Ribeirão Preto - USP
+        </mat-card-content>
+      </mat-card>
+    </tr>
+  </tbody>
+</table>
 
 <footer>
   <div>

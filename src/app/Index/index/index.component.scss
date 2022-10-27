@@ -47,9 +47,9 @@ mat-toolbar{
   align-items: center;
   width: 100%;
   border-color: black;
-  
 
-  button{
+
+  #buttonMenu{
     display: none;
   }
 
@@ -79,7 +79,7 @@ mat-toolbar{
       display: none;
     }
 
-    button{
+    #buttonMenu{
       display: block;
     }
   }
@@ -138,7 +138,7 @@ mat-list-item:hover{
 
 #box1{
   margin-bottom: .5%;
-  
+
 }
 
 #thaiseoffice{
@@ -151,14 +151,14 @@ mat-list-item:hover{
     display: none;
   }
   @media(max-width:1540px){
-    background-size: 120%; 
+    background-size: 120%;
     background-position:center ;
   }
   @media(max-width:1350px){
-    background-size: 150%; 
+    background-size: 150%;
     background-position:center ;
   }
- 
+
   @media(max-width:767px){
     img{
       width: 100%;

@@ -30,19 +30,8 @@ export class IndexComponent implements OnInit {
   onWindowResize() {
     this.getScreenWidth = window.innerWidth;
     this.getScreenHeight = window.innerHeight;
-    this.adjustCardsSize();
+    if(this.getScreenWidth > 748 ) this.clickMenu = false;
   }
 
-  adjustCardsSize(){
-    this.colNumber = "3"
-
-    if(this.getScreenWidth < 768 ){
-      this.colNumber = "1";
-    }
-   
-    if(this.getScreenWidth < 914 && this.getScreenWidth > 767){
-      this.colNumber = "2";
-    }
-  }
 
 }
