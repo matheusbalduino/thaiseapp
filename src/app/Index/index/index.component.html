@@ -1,9 +1,11 @@
+<!-- ################### Imagem de inicio ################### -->
 <div id="thaisereumato"></div>
 
+<!-- #################### menu principal  ################### -->
 <mat-toolbar>
 
-  <div class="divbar">
-    <span>Home</span>
+  <div class="divbar" (click)="onClickHome()">
+    <span >Home</span>
     <span class="example-spacer"></span>
   </div>
   <div  class="divbar">
@@ -34,11 +36,13 @@
   </mat-list>
 </mat-card>
 
-<div id="logothaise">
+ <!-- ################### logo do site thaise ################### -->
+
+<div id="logothaise" >
     <img src="../../../assets/Dra-Daniela-Siqueira-Dermatologista.jpg" alt="">
 </div>
-<!--
-<mat-divider></mat-divider> -->
+
+<!-- ################### boas vindas thaise ################### -->
 
 <div id="box1"  class="row" style="background-color: #dcd6d6;" fxShow [fxShow.xs]="false" fxShow [fxShow.sm]="true" fxHide [fxHide.gt-sm]="false">
 
@@ -66,7 +70,8 @@
 
 </div>
 
-<div id="box1"  class="row" style="background-color: #dcd6d6;" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true">
+
+<div id="box1"  style="background-color: #dcd6d6;" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true">
 
   <div id="thaiseoffice">
     <img src="/assets/Dermatologista-em-Ribeirao-Preto.jpg" alt="Reumatologia"/>
@@ -74,7 +79,7 @@
 
 </div>
 
-<div id="box1" class="row" style="background-color: #dcd6d6;" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true" >
+<div id="box1" style="background-color: #dcd6d6;" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true" >
     <h1  class="bigText mt-3">
       Sejam bem-vindos(as)!
     </h1>
@@ -92,9 +97,14 @@
     </p>
 </div>
 
-<mat-toolbar id="nameThaise" class="text-center" > DR.Thaise Oliveira Quaresma - Reumatologia </mat-toolbar>
 
-<table class="table">
+<!-- ################### cards de formação e especialização ################### -->
+
+<mat-toolbar id="nameThaise" > DR.Thaise Oliveira Quaresma - Reumatologia </mat-toolbar>
+
+<table id="boxResume" [ngClass]="{
+  'animate__animated animate__bounceInUp animate_slower': effectOn
+  }" class="table text-center">
   <tbody>
     <tr  [fxShow.xs]="false" >
       <td>
@@ -178,7 +188,7 @@
   </tbody>
 </table>
 
-<table class="table" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true">
+<table id="boxResume2" [ngClass]="{'animate__animated animate__bounceInUp': effectOn2}" class="table text-center animate__animated animate__backInUp" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true">
   <tbody>
     <tr>
       <td>
@@ -238,6 +248,9 @@
     </tr>
   </tbody>
 </table>
+
+
+<!-- ################### fim de cards ################### -->
 
 <footer>
   <div>
