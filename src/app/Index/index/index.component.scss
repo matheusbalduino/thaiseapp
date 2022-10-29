@@ -268,7 +268,6 @@ thead, tbody, tfoot, tr, td, th{
     padding: 0px 0px 0px 0px;
   }
   @media(max-width:400px){
-    background-color:rgb(220 214 214);
     align-items: center;
    }
   
@@ -298,6 +297,21 @@ thead, tbody, tfoot, tr, td, th{
   }
   @media(max-width:400px){
     display: none;
+  }
+}
+
+// -------------------------- image reumato --------------------------------
+#imgReumatotwo{
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+.cropped {
+  margin-top: 1%;
+  width: 100%; /* width of container */
+  height: 35vh; /* height of container */
+  object-fit: cover;
+  @media(max-width:600px){
+    height: 15vh;
   }
 }
 
