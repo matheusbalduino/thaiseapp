@@ -37,7 +37,7 @@ export class IndexComponent implements OnInit {
     this.getScreenHeight = window.innerHeight;
     if(this.getScreenWidth > 748 ) this.clickMenu = false;
   }
-  
+
   count:number = 0
 
   @HostListener('window:scroll', ['$event'])
@@ -60,7 +60,14 @@ export class IndexComponent implements OnInit {
     const elementBox1 = document.getElementById("boxResume")
     const heightBox1 = elementBox1?.scrollHeight || 0
     window.scrollTo(0, heightBox1 + 800)
-    console.log('click')
+
+    if(this.getScreenWidth < 768){
+      const elementBox2 = document.getElementById("boxResume2")
+      const heightBox2 = elementBox2?.scrollHeight || 0
+      window.scrollTo(0, heightBox2 + 800)
+    }
+
+
   }
 
 

@@ -29,7 +29,7 @@
 
 <mat-card id="meucard" [ngClass]="{'noOption': !clickMenu}">
   <mat-list role="list" class="container text-center" >
-    <mat-list-item role="listitem">Home</mat-list-item>
+    <mat-list-item (click)="onClickHome()" role="listitem">Home</mat-list-item>
     <mat-list-item role="listitem">Reumatologia clínica</mat-list-item>
     <mat-list-item role="listitem">Artigos</mat-list-item>
     <mat-list-item role="listitem">Contato</mat-list-item>
@@ -103,8 +103,9 @@
 <mat-toolbar id="nameThaise" > DR.Thaise Oliveira Quaresma - Reumatologia </mat-toolbar>
 
 <table id="boxResume" [ngClass]="{
-  'animate__animated animate__bounceInUp animate_slower': effectOn
-  }" class="table text-center">
+  'animate__animated animate__zoomIn animate_slower': effectOn
+  }"
+  class="table mb-5 text-center">
   <tbody>
     <tr  [fxShow.xs]="false" >
       <td>
@@ -188,7 +189,11 @@
   </tbody>
 </table>
 
-<table id="boxResume2" [ngClass]="{'animate__animated animate__bounceInUp': effectOn2}" class="table text-center animate__animated animate__backInUp" fxShow [fxShow.xs]="true" fxShow [fxShow.sm]="false" fxHide [fxHide.gt-sm]="true">
+<table id="boxResume2" [ngClass]="{'animate__animated animate__zoomIn': effectOn2}"
+class="table mb-5 text-center animate__animated animate__zoomIn"
+fxShow [fxShow.xs]="true"
+fxShow [fxShow.sm]="false"
+fxHide [fxHide.gt-sm]="true">
   <tbody>
     <tr>
       <td>
@@ -249,10 +254,20 @@
   </tbody>
 </table>
 
+<!--- ################# TRATAMENTOS REUMATOLÓGICOS ################ --->
+<div class="mt-5 mb-5" style="width: 100%; display: flex; flex-direction: row; padding: 0px 20px 0px 0px; justify-content: center;">
+    <div style="font-weight:200; font-size: 40px; text-align: end;padding: 0px 20px 0px 0px">
+     <span>PROCEDIMENTOS REUMATOLÓGICOS </span>
+    </div>
+    <div style="width: 20%; justify-content: center; position: relative; font-size: 20px;">
+    <mat-divider style="height: 1%;
+    background-color: black;
+    margin: 12px 0px 0px 0px;"></mat-divider>
+  </div>
+</div>
 
-<!-- ################### fim de cards ################### -->
 
-<footer>
+<footer class="mt-5">
   <div>
 
   </div>
