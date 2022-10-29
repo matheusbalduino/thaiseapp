@@ -14,10 +14,16 @@ import {MatCardModule} from '@angular/material/card';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatGridListModule} from '@angular/material/grid-list';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { FooterComponent } from './footer/footer.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import { PanelComponent } from './panel/panel.component';
+
 @NgModule({
   declarations: [
     AppComponent,
-    IndexComponent
+    IndexComponent,
+    FooterComponent,
+    PanelComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +37,8 @@ import { FlexLayoutModule } from '@angular/flex-layout';
     MatCardModule,
     MatDividerModule,
     MatGridListModule,
-    FlexLayoutModule
+    FlexLayoutModule,
+    MatExpansionModule
   ],
   providers: [],
   bootstrap: [AppComponent]
