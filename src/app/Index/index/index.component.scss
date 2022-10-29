@@ -198,15 +198,14 @@ mat-list-item:hover{
 }
 
 #nameThaise{
-  font-size: 2em;
-  @media (max-width:768px) {
-    font-size: 1.5em;
-  }
-  @media (max-width:600px) {
-    font-size: 1em;
+  font-size: 2vw;
+  font-weight: 300 !important;
+  @media(max-width:600px) {
+  font-size: 4vw;
+    
   }
 }
-/*<------------------------------------- this region is responsable for the cards --------------------------------------->*/
+/*<-------------------------------------  cards --------------------------------------->*/
 
 mat-grid-list{
   width: 100%;
@@ -218,11 +217,8 @@ mat-grid-tile{
   justify-content: center;
   align-items: center;
   text-align: center;
-  color: #000000;
-  font-weight: 500 !important;
-  line-height: 1.7em;
-  text-transform: uppercase;
 }
+
 
 thead, tbody, tfoot, tr, td, th{
   border-style: none;
@@ -231,8 +227,6 @@ thead, tbody, tfoot, tr, td, th{
 }
 
 .example-card {
-  justify-content: center;
-  align-items: center;
   text-align: center;
   max-width: 100%;
   height: 100%;
@@ -240,17 +234,70 @@ thead, tbody, tfoot, tr, td, th{
   justify-content: center;
   align-items: center;
   box-shadow: none;
+  line-height: 1.5em;
+  text-transform: uppercase;
+  color: #000000;
   mat-card-content{
-    font-size: 1.5em;
+    font-size: 15px;
     color: #000000;
-    font-weight: 500 !important;
+    font-weight: 400 !important;
     line-height: 1.7em;
     text-transform: uppercase;
     height: 50%;
+    font-family: "Montserrat", Sans-serif;
+    @media(max-width: 600px){
+      font-size: 3.5vw;
+    }
   }
 }
 
 .example-card:hover{
   background-color: #00000027;
+}
+
+// -------------------------- Title --------------------------------
+#titlebox{
+  width: 100%; 
+  display: flex; 
+  flex-direction: row; 
+  padding: 0px 20px 0px 0px; 
+  margin-top: 8%; 
+  justify-content: center;
+
+  @media(max-width:1400px){
+    padding: 0px 0px 0px 0px;
+  }
+  @media(max-width:400px){
+    background-color:rgb(220 214 214);
+    align-items: center;
+   }
+  
+}
+#titleInnerBoxOne{
+  font-weight:200 !important; 
+  font-size: 2vw; 
+  text-align: end;
+  padding: 0px 20px 0px 0px;
+  font-family: 'Montserrat', sans-serif;
+
+  @media(max-width:1025px){
+    padding: 0px 10px 0px 0px;
+    font-size: 3vw; 
+  }
+  @media(max-width:768px){
+    font-weight: 500 !important;
+    font-size: 4vw;
+    margin: 0px 0px 0px 0px;
+  }
+ 
+} 
+#titleInnerBoxTwo{
+  width: 30%; justify-content: center; position: relative; font-size: 20px;
+  @media(max-width:768px){
+    width: 5%;
+  }
+  @media(max-width:400px){
+    display: none;
+  }
 }
 

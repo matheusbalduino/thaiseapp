@@ -100,12 +100,12 @@
 
 <!-- ################### cards de formação e especialização ################### -->
 
-<mat-toolbar id="nameThaise" > DR.Thaise Oliveira Quaresma - Reumatologia </mat-toolbar>
+<mat-toolbar> <h1  id="nameThaise" >DR.Thaise Oliveira Quaresma - Reumatologia </h1>  </mat-toolbar>
 
 <table id="boxResume" [ngClass]="{
   'animate__animated animate__zoomIn animate_slower': effectOn
   }"
-  class="table mb-5 text-center">
+  class="table text-center">
   <tbody>
     <tr  [fxShow.xs]="false" >
       <td>
@@ -255,14 +255,13 @@ fxHide [fxHide.gt-sm]="true">
 </table>
 
 <!--- ################# TRATAMENTOS REUMATOLÓGICOS ################ --->
-<div class="mt-5 mb-5" style="width: 100%; display: flex; flex-direction: row; padding: 0px 20px 0px 0px; justify-content: center;">
-    <div style="font-weight:200; font-size: 40px; text-align: end;padding: 0px 20px 0px 0px">
-     <span>PROCEDIMENTOS REUMATOLÓGICOS </span>
-    </div>
-    <div style="width: 20%; justify-content: center; position: relative; font-size: 20px;">
-    <mat-divider style="height: 1%;
-    background-color: black;
-    margin: 12px 0px 0px 0px;"></mat-divider>
+
+<div id="titlebox" >
+   
+     <h1 id="titleInnerBoxOne">PROCEDIMENTOS REUMATOLÓGICOS </h1>
+    
+    <div id="titleInnerBoxTwo">
+    <mat-divider style="height: 1%; background-color: black; margin: 12px 0px 0px 0px;"></mat-divider>
   </div>
 </div>
 
