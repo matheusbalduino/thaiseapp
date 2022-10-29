@@ -17,13 +17,15 @@ import { FlexLayoutModule } from '@angular/flex-layout';
 import { FooterComponent } from './footer/footer.component';
 import {MatExpansionModule} from '@angular/material/expansion';
 import { PanelComponent } from './panel/panel.component';
+import { MenuComponent } from './menu/menu.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     IndexComponent,
     FooterComponent,
-    PanelComponent
+    PanelComponent,
+    MenuComponent
   ],
   imports: [
     BrowserModule,

@@ -1,40 +1,7 @@
 <!-- ################### Imagem de inicio ################### -->
 <div id="thaisereumato"></div>
 
-<!-- #################### menu principal  ################### -->
-<mat-toolbar>
-
-  <div class="divbar" (click)="onClickHome()">
-    <span >Home</span>
-    <span class="example-spacer"></span>
-  </div>
-  <div  class="divbar">
-    <span>Reumatologia clínica</span>
-    <span class="example-spacer"></span>
-  </div>
-  <div class="divbar">
-    <span>Artigos</span>
-    <span class="example-spacer"></span>
-  </div>
-  <div class="divbar">
-    <span>Contato</span>
-    <span class="example-spacer"></span>
-  </div>
-
-
-  <button id="buttonMenu" (click)="openCloseNav()" mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
-    <mat-icon>{{menu}}</mat-icon>
-  </button>
-</mat-toolbar>
-
-<mat-card id="meucard" [ngClass]="{'noOption': !clickMenu}">
-  <mat-list role="list" class="container text-center" >
-    <mat-list-item (click)="onClickHome()" role="listitem">Home</mat-list-item>
-    <mat-list-item role="listitem">Reumatologia clínica</mat-list-item>
-    <mat-list-item role="listitem">Artigos</mat-list-item>
-    <mat-list-item role="listitem">Contato</mat-list-item>
-  </mat-list>
-</mat-card>
+<app-menu></app-menu>
 
  <!-- ################### logo do site thaise ################### -->
 
@@ -256,15 +223,12 @@ fxHide [fxHide.gt-sm]="true">
 
 <!--- ################# TRATAMENTOS REUMATOLÓGICOS ################ --->
 
-<div id="titlebox" >
-   
-     <h1 id="titleInnerBoxOne">PROCEDIMENTOS REUMATOLÓGICOS </h1>
-    
-    <div id="titleInnerBoxTwo">
-    <mat-divider style="height: 1%; background-color: black; margin: 12px 0px 0px 0px;"></mat-divider>
-  </div>
-</div>
+<app-panel 
+  title="Procedimentos Reumatológicos" 
+  img="assets/procedimentosmaos.jpg">
+</app-panel>
 
-<div id="imgReumatotwo"><img src="assets/procedimentosmaos.jpg" alt="Reumatologia" class="cropped"></div>
-
-<app-panel></app-panel>
+<app-panel 
+  title="Procedimentos Reumatológicos" 
+  img="assets/reumatologistajoelho.jpg">
+</app-panel>

@@ -1,0 +1,92 @@
+mat-toolbar{
+    background-color: rgba(0, 0, 0, 0.787);
+    padding: 0% 10% 0% 10%;
+    font-size: 18px;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    flex-grow: 1;
+    text-transform: uppercase;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    border-color: black;
+  
+  
+    #buttonMenu{
+      display: none;
+    }
+  
+    mat-toolbar-row{
+      justify-content: space-between;
+  
+    }
+  
+    .divbar{
+      width: 100%;
+      cursor: pointer;
+      text-align: center;
+    }
+  
+    div:hover{
+      //font-size: 15px;
+      color: rgba(245, 222, 179, 0.508);
+      transform: scale(0.9);
+      transition: transform .3s ease-in-out;
+    }
+    @media(max-width:750px){
+      padding: 0% 0% 0% 0%;
+      .divbar{
+        display: none;
+      }
+      mat-toolbar-row{
+        display: none;
+      }
+  
+      #buttonMenu{
+        display: block;
+      }
+    }
+  }
+  
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+  .noOption{
+    display: none;
+  }
+  
+  .meucard{
+    display: none;
+    font-family: "Montserrat", Sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    color: #FFFFFF;
+    fill: #FFFFFF;
+    flex-grow: 1;
+    text-transform: uppercase;
+    align-items: center;
+  
+    @media(max-width:750px){
+      display: block;
+    }
+  }
+  
+  mat-list{
+    align-items: center !important;
+  }
+  
+  mat-divider{
+    height: 1%;
+  }
+  
+  mat-list-item:hover{
+  
+    color: rgb(106, 84, 58);
+    background-color: rgba(128, 128, 128, 0.119);
+  }
