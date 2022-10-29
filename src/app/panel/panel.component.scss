@@ -1,0 +1,30 @@
+.mat-form-field + .mat-form-field {
+    margin-left: 8px;
+  }
+
+  
+
+
+  mat-accordion{    
+
+    mat-expansion-panel{
+      background-color: rgba(0, 0, 0, 0.105);
+      
+    }
+    mat-expansion-panel-header{
+      font-family: "Montserrat", Sans-serif;
+      font-size: 22px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    p{
+      margin-top: 2%;
+      font-family: "Montserrat", Sans-serif;
+      font-size: 15px;
+      font-weight: 300;
+      @media(max-width: 768px){
+        font-size: 3vw;
+      }
+    }
+    
+  }
