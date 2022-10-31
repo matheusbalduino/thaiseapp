@@ -1,0 +1,16 @@
+{
+  "hosting": {
+    "public": "dist/thaiseapp",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "/assets",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}

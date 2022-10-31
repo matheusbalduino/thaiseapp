@@ -3,8 +3,8 @@ import { RouterModule, Routes } from '@angular/router';
 import { IndexComponent } from './Index/index/index.component';
 
 const routes: Routes = [
-  {path: 'home', component:IndexComponent},
-  {path:'', redirectTo:'/home', pathMatch: 'full' }
+  {path: '', component:IndexComponent}
+  //{path:'', redirectTo:'', pathMatch: 'full'}
 ];
 
 @NgModule({
