@@ -36,9 +36,12 @@
   text-align: center;
   margin-top: 2%;
   margin-bottom: 2%;
+  img{
+    width: 50%;
+  }
   @media(max-width:768px){
     img{
-      width: 50%;
+      width: 100%;
     }
   }
 }
@@ -76,7 +79,7 @@
   }
 }
 .bigText{
-  font-size: 25px;
+  font-size: 35px;
   text-align: left;
   color: #000000;
   font-weight: 500;
@@ -92,7 +95,7 @@
 
 .normalText{
   padding: 0px 10px 0px 10px;
-  font-size: 15px;
+  font-size: 125%;
   text-align: left;
   color: #000000;
   font-weight: 300 !important;
@@ -161,5 +164,9 @@ thead, tbody, tfoot, tr, td, th{
 
 .example-card:hover{
   background-color: #00000027;
+}
+
+.animate__animated {
+  --animate-duration: 2s;
 }
 

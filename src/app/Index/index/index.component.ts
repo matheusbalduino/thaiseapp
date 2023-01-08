@@ -16,7 +16,7 @@ export class IndexComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
- 
+    this.effectOn = false
   }
 
 
@@ -37,10 +37,9 @@ export class IndexComponent implements OnInit {
 
     this.lastPositionY = window.scrollY;
 
-    if(this.lastPositionY > heightBox1 + 200) this.effectOn = true
-    else this.effectOn = false
+    if(this.lastPositionY > heightBox1 + 200)this.effectOn = true
+    
     if(this.lastPositionY > heightBox2 - 100) this.effectOn2 = true
-    else this.effectOn2 = false
   }
 
 }
